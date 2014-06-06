@@ -1,16 +1,21 @@
 'use strict';
 
-var when = require('when');
+var when        = require('when'),
+    config      = require('./config'),
+    fs          = require('fs');
 
 var loadConfig = function() {
-    return when.promise(function(resolve, reject, notify) {
-        resolve({
-            port: 8000,
-            middleware: {
+    return when.promise(function(resolve, reject) {
 
-            },
-            contentDirectory: '/Users/ltambini/Development/Nodepress/content/ferntastic'
-        });
+        //we gotta get the data directory
+        config.loadFile('content/data/config.json').then(function(config) {
+            console.log(config);
+            resolve(config);
+        }).catch(function(err){
+            console.log(err);
+            reject(err);
+        })
+
     })
 };
 

@@ -4,9 +4,11 @@ var Bootstrap = require('./bootstrap'),
     when = require('when'),
     Server = require('./server');
 
+//establish the boot function
 var boot = function() {
-    var promise = when.promise(function( resolve, reject, notify ) {
-
+    //create the promise that will be exported
+    var promise = when.promise(function( resolve, reject ) {
+        //load the stuff from bootstrap to get the config
         Bootstrap()
             .then( function(config) {
 
@@ -21,6 +23,8 @@ var boot = function() {
 
             })
             .catch(function(err) {
+                //this means there was a general problem with loading up the application
+                //maybe no config? maybe theme doesn't exist?
                 reject( err );
             })
 
