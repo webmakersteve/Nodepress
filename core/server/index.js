@@ -21,7 +21,8 @@ var setupExpress = function(config) {
 var createRoutes = function(app,config) {
     return when.promise(function(resolve,reject) {
         routes.setRoutes(app).then(function(app) {
-            app.listen(config.port, function() {
+            var port = config.development.port;
+            app.listen(port, function() {
                 console.log('listening');
                 resolve(app);
             });

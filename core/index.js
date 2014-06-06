@@ -12,6 +12,7 @@ var boot = function() {
         Bootstrap()
             .then( function(config) {
 
+
                 //now we will create a server with this config
                 var app = new Server(config); //returns a promise
 
