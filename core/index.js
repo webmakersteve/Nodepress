@@ -24,7 +24,9 @@ var boot = function() {
                 reject( err );
             })
 
-    })
+    });
+
+    return promise;
 }
 
-module.exports = boot();
+module.exports = boot;

@@ -2,7 +2,7 @@
 
 var Nodepress = require('./core'); //returns a promise
 
-Nodepress().then( function(app) {
+Nodepress().then(function(app) {
     // app passes along the express server
     console.log(app);
 })
