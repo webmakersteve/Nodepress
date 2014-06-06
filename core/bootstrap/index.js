@@ -7,9 +7,9 @@ var loadConfig = function() {
         resolve({
             port: 8000,
             middleware: {
-                partialsDir: __dirname + '/views/layouts'
+
             },
-            contentDirectory: __dirname + '/views'
+            contentDirectory: '/Users/ltambini/Development/Nodepress/content/ferntastic'
         });
     })
 };
