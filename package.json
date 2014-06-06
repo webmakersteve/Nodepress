@@ -1,0 +1,37 @@
+{
+  "name": "Nodepress",
+  "version": "0.1.0",
+  "description": "Blogging software built in node",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^0.7.12",
+    "colors": "^0.6.2",
+    "compression": "^1.0.6",
+    "connect-slashes": "^1.2.0",
+    "express": "^4.4.1",
+    "express-handlebars": "^0.0.2",
+    "lodash": "^2.4.1",
+    "lusca": "^1.0.0",
+    "moment": "^2.6.0",
+    "validator": "^3.14.0",
+    "when": "^3.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webmakersteve/Nodepress.git"
+  },
+  "keywords": [
+    "blog",
+    "wordpress"
+  ],
+  "author": "Stephen Parente",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/webmakersteve/Nodepress/issues"
+  },
+  "homepage": "https://github.com/webmakersteve/Nodepress"
+}
