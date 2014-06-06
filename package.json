@@ -16,8 +16,11 @@
     "validator": "^3.14.0",
     "when": "^3.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5"
+  },
   "scripts": {
+    "start": "node index",
     "test": "test"
   },
   "repository": {
