@@ -5,10 +5,12 @@ module.exports = {
 
         // look for the controller in this directory and return its pure function
         var controller = require('./posts.js'); //placeholder
+        return controller;
+        /*
         controller.do( actionName ).then(function() {
             resolve();
         }).catch(function(err) {
             reject(err);
-        });
+        }); */
     }
 }

@@ -15,6 +15,7 @@ var PostsController = function(req,res) {
     var actions = {
       'default': function($scope) {
           // this is where the logic goes to get the data return
+          console.log('doing default action');
           return when.promise(function(resolve,reject) {
               themer.intend('posts', $scope.res, data).then(function() {
                 resolve();
