@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "node index",
-    "test": "test"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
