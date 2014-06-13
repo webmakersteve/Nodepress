@@ -24,3 +24,7 @@ bower_components
 .tmp
 
 !/README.md
+/content/themes/*
+!/content/themes/ferntastic
+/content/data/*
+!/content/data/config.sample.json

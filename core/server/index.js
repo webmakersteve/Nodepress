@@ -15,10 +15,9 @@ var setupExpress = function(config) {
     app.set('views', config.activeTheme);
     app.use('/css', less(config.activeTheme + '/less'), { compress: true });
     app.use(compress());
-
+    createRoutes(app,config);
     return app;
 }
-
 
 var createRoutes = function(app,config) {
     return when.promise(function(resolve,reject) {
@@ -32,25 +31,17 @@ var createRoutes = function(app,config) {
 }
 
 var getReady = function(config) {
-    return when.try(setupExpress, config).then(function(app) {
-        createRoutes(app,config);
-    });
+    return when.try(setupExpress, config);
 }
-
-
 
 var init = function(config) {
 
     //set up the handlebars middleware
-
     return when.promise(function(resolve, reject, notify) {
 
         getReady(config).then(function(obj) {
             resolve(obj);
         });
-
-        //now we need to set the routes
-
 
     });
 };
