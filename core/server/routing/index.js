@@ -11,8 +11,7 @@ module.exports = function(app) {
 
     app.get('/', function(req,res) {
         // default admin panel
-        console.log('index');
-        res.end('index');
+        res.render('index', {});
     });
 
     return app;
