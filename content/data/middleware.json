@@ -1,3 +1,5 @@
 {
-    "partialsDir" :  "Users/ltambini/Development/Nodepress/content/ferntastic/layouts"
+    "partialsDir"   :  "/Users/ltambini/Development/Nodepress/content/themes/ferntastic/blocks",
+    "defaultLayout" : "/Users/ltambini/Development/Nodepress/content/themes/ferntastic/layouts/default.hbs",
+    "layoutsDir"    : "/Users/ltambini/Development/Nodepress/content/themes/ferntastic/layouts/",
 }

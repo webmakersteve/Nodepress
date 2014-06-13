@@ -8,5 +8,5 @@
         "port": 8000
     },
 
-    "contentDirectory":  "/Users/ltambini/Development/Nodepress/content/themes/ferntastic"
+    "activeTheme":  "/Users/ltambini/Development/Nodepress/content/themes/ferntastic"
 }
